@@ -33,3 +33,10 @@
 
 # 
 *.pdf
+.DS_Store
+
+# ide
+.idea
+.vscode
+cmake-build-debug
+CMakeLists.txt
