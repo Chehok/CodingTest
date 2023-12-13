@@ -3,9 +3,11 @@ using namespace std;
 
 vector<int> v;
 
-void printVector()
+void printVector(int r)
 {
-    for (int i : v) cout << i << " ";
+    for(int i = 0; i < r; i++) {
+        cout << v[i] << " ";
+    }
     cout << "\n";
     return;
 }
@@ -14,7 +16,7 @@ void makePermutation(int n, int r, int depth)
 {
     if (depth == r)
     {
-        printVector();
+        printVector(r);
         return;
     }
 
@@ -30,6 +32,6 @@ void makePermutation(int n, int r, int depth)
 int main()
 {
     for (int i = 1; i <= 3; i ++) v.push_back(i);
-    makePermutation(3, 3, 0);
+    makePermutation(3, 2, 0);
     return 0;
 }
